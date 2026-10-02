@@ -1,0 +1,7 @@
+core
+database
+extraction
+ingestion
+preprocessing
+services
+validation

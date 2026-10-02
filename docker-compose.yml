@@ -1,0 +1,27 @@
+# docker-compose.yml
+# Docker Compose service specification.
+# Defines PostgreSQL database service named 'meeting-extractor' and local services environment.
+# Links to: .env.example, src/database/connection.py
+
+version: '3.8'
+
+services:
+  meeting-extractor:
+    container_name: meeting-extractor
+    image: postgres:16-alpine
+    environment:
+      POSTGRES_USER: user
+      POSTGRES_PASSWORD: password
+      POSTGRES_DB: meeting_db
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U user -d meeting_db"]
+      interval: 5s
+      timeout: 5s
+      retries: 5
+
+volumes:
+  postgres_data:

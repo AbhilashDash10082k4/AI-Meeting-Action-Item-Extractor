@@ -1,0 +1,32 @@
+# pyproject.toml
+# Project dependency manifest and tooling configurations.
+# Defines Python project metadata, dependencies for FastAPI, SQLAlchemy, Streamlit, Pydantic,
+# LLM APIs, document parsers, and testing frameworks.
+# Links to: apps/api, apps/streamlit, src/*
+
+[project]
+name = "ai-meeting-action-item-extractor"
+version = "0.1.0"
+description = "AI Meeting Action-Item Extractor with Guardrails & Validation"
+authors = [{ name = "Abhilash Dash" }]
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "fastapi>=0.110.0",
+    "uvicorn[standard]>=0.28.0",
+    "pydantic>=2.6.0",
+    "sqlalchemy>=2.0.28",
+    "psycopg2-binary>=2.9.9",
+    "slowapi>=0.1.9",
+    "streamlit>=1.32.0",
+    "httpx>=0.27.0",
+    "python-docx>=1.1.0",
+    "pypdf>=4.1.0",
+    "python-dotenv>=1.0.1",
+    "openai>=1.14.0",
+    "pytest>=8.1.0",
+]
+
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"

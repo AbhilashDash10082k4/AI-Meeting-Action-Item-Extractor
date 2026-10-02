@@ -1,0 +1,5 @@
+[Alice]: Hi everyone, let's review the sprint deliverables.
+[Bob]: I will deploy the PostgreSQL container by tomorrow 5 PM.
+[Alice]: Great! Charlie, can you update the documentation?
+[Charlie]: Yes, I will update the API documentation by Friday.
+[Alice]: Thanks. Make sure all unit tests pass before merging.
