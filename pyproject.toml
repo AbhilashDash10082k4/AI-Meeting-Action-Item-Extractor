@@ -9,7 +9,7 @@ version = "0.1.0"
 description = "AI Meeting Action-Item Extractor with Guardrails & Validation"
 authors = [{ name = "Abhilash Dash" }]
 readme = "README.md"
-requires-python = ">=3.10"
+requires-python = ">=3.11,<3.14"
 dependencies = [
     "fastapi>=0.110.0",
     "uvicorn[standard]>=0.28.0",
