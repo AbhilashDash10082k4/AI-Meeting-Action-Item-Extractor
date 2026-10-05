@@ -1,0 +1,4 @@
+# Dependencies for the Streamlit frontend only.
+# The frontend communicates with the deployed FastAPI backend over HTTP.
+streamlit==1.65.0
+httpx==0.28.1
