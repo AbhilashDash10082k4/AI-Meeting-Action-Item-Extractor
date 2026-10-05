@@ -1,7 +1,6 @@
 # pyproject.toml
 # Project dependency manifest and tooling configurations.
-# Defines Python project metadata, dependencies for FastAPI, SQLAlchemy, Streamlit, Pydantic,
-# LLM APIs, document parsers, and testing frameworks.
+# Defines Python project metadata, dependencies, build settings, and test dependencies.
 # Links to: apps/api, apps/streamlit, src/*
 
 [project]
@@ -24,9 +23,14 @@ dependencies = [
     "pypdf>=4.1.0",
     "python-dotenv>=1.0.1",
     "openai>=1.14.0",
+    "groq>=0.30.0",
+    "google-genai>=1.0.0",
     "pytest>=8.1.0",
 ]
 
 [build-system]
 requires = ["setuptools>=61.0"]
 build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["src"]
