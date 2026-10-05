@@ -1,0 +1,59 @@
+[
+  {
+    "id": "meeting-001",
+    "transcript": "[Alice]: Let's review deployment.\n[Bob]: I will deploy the PostgreSQL container by tomorrow.\n[Charlie]: I will update the API documentation by Friday.\n[Alice]: We also need all unit tests to pass before merging.",
+    "action_items": [
+      {
+        "task": "I will deploy the PostgreSQL container by tomorrow.",
+        "owner": "Bob",
+        "deadline": null,
+        "status": "pending",
+        "confidence": 1.0,
+        "evidence": "I will deploy the PostgreSQL container by tomorrow.",
+        "source_segment_ids": []
+      },
+      {
+        "task": "I will update the API documentation by Friday.",
+        "owner": "Charlie",
+        "deadline": null,
+        "status": "pending",
+        "confidence": 1.0,
+        "evidence": "I will update the API documentation by Friday.",
+        "source_segment_ids": []
+      },
+      {
+        "task": "We also need all unit tests to pass before merging.",
+        "owner": null,
+        "deadline": null,
+        "status": "pending",
+        "confidence": 1.0,
+        "evidence": "We also need all unit tests to pass before merging.",
+        "source_segment_ids": []
+      }
+    ]
+  },
+  {
+    "id": "meeting-002",
+    "transcript": "[Maya]: I will prepare the release notes.\n[Ravi]: The release is next week.\n[Maya]: I will send the notes to the team.",
+    "action_items": [
+      {
+        "task": "I will prepare the release notes.",
+        "owner": "Maya",
+        "deadline": null,
+        "status": "pending",
+        "confidence": 1.0,
+        "evidence": "I will prepare the release notes.",
+        "source_segment_ids": []
+      },
+      {
+        "task": "I will send the notes to the team.",
+        "owner": "Maya",
+        "deadline": null,
+        "status": "pending",
+        "confidence": 1.0,
+        "evidence": "I will send the notes to the team.",
+        "source_segment_ids": []
+      }
+    ]
+  }
+]
